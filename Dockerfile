@@ -14,4 +14,6 @@ ENV MAX_PROCS 3
 ENV MAX_LOAD_PER_PROC 4
 ENV IDLE_TIMEOUT 20
 
+EXPOSE $PORT
+
 CMD ["lighttpd", "-D", "-f", "/lighttpd.conf"]
